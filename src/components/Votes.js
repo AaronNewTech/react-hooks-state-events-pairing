@@ -1,16 +1,13 @@
 import { useState } from "react";
 
-function Votes({ video }) {
-  const initUpVotes = video.upvotes;
-  const initDownVotes = video.downvotes;
-
-  const [upVotes, changeUpVotes] = useState(initUpVotes);
+function Votes({ upvotes, downvotes }) {
+  const [upVotes, changeUpVotes] = useState(upvotes);
 
   function handleUpVotes() {
     changeUpVotes(upVotes + 1);
   }
 
-  const [downVotes, changeDownVotes] = useState(initDownVotes);
+  const [downVotes, changeDownVotes] = useState(downvotes);
 
   function handleDownVotes() {
     changeDownVotes(downVotes + 1);

@@ -8,10 +8,6 @@ function App() {
   return (
     <div className="App">
       <VideoInfo video={video} />
-
-      <Votes video={video} />
-
-      {/* <Comments video={video} /> */}
     </div>
   );
 }
